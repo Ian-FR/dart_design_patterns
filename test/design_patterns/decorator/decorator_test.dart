@@ -1,8 +1,6 @@
-import 'package:clean_architecture_example/design_patterns/decorator/mozzarella_decorator.dart';
-import 'package:clean_architecture_example/design_patterns/decorator/oregano_decorator.dart';
-import 'package:clean_architecture_example/design_patterns/decorator/peperoni_decorator.dart';
-import 'package:clean_architecture_example/design_patterns/decorator/pizza.dart';
 import 'package:flutter_test/flutter_test.dart';
+
+import 'package:dart_design_patterns/design_patterns/decorator/decorator.dart';
 
 main() {
   test('should return base description', () {

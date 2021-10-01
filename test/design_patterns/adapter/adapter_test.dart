@@ -1,9 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import 'package:clean_architecture_example/design_patterns/adapter/contracts/service_two.dart';
-import 'package:clean_architecture_example/design_patterns/adapter/customer.dart';
-import 'package:clean_architecture_example/design_patterns/adapter/service_two_adapter.dart';
+import 'package:dart_design_patterns/design_patterns/adapter/contracts/service_two.dart';
+import 'package:dart_design_patterns/design_patterns/adapter/customer.dart';
+import 'package:dart_design_patterns/design_patterns/adapter/service_two_adapter.dart';
 
 class MockServiceTwo extends Mock implements ServiceTwo {}
 

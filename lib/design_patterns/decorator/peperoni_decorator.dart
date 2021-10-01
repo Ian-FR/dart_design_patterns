@@ -1,4 +1,4 @@
-import 'package:clean_architecture_example/design_patterns/decorator/pizza.dart';
+import 'package:dart_design_patterns/design_patterns/decorator/pizza.dart';
 
 class PeperoniDecorator implements Pizza {
   final Pizza pizza;
