@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:clean_architecture_example/design_patterns/singleton/singleton.dart';
+import 'package:dart_design_patterns/design_patterns/singleton/singleton.dart';
 
 main() {
   test('should always return the same instance', () {
