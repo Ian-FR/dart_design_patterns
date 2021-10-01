@@ -1,31 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-class Customer {
-  final String fullName;
-  final int age;
-
-  Customer(this.fullName, this.age);
-}
-
-abstract class ServiceOne {
-  Customer makeCustomer();
-}
-
-abstract class ServiceTwo {
-  Customer findCustomer();
-}
-
-class ServiceTwoAdapter implements ServiceOne {
-  final ServiceTwo two;
-
-  ServiceTwoAdapter(this.two);
-
-  @override
-  Customer makeCustomer() {
-    return two.findCustomer();
-  }
-}
+import 'package:clean_architecture_example/design_patterns/adapter/contracts/service_two.dart';
+import 'package:clean_architecture_example/design_patterns/adapter/customer.dart';
+import 'package:clean_architecture_example/design_patterns/adapter/service_two_adapter.dart';
 
 class MockServiceTwo extends Mock implements ServiceTwo {}
 
